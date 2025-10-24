@@ -224,7 +224,7 @@ loadCachedData();
 connectToBroker();
 
 // Publish data every 10 seconds
-const publishInterval = setInterval(publishData, 10000);
+const publishInterval = setInterval(publishData, 3600000);
 
 // Handle graceful shutdown
 process.on('SIGINT', () => {
